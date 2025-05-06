@@ -2,10 +2,48 @@
 <html>
 <head>
 <title>View Upanayanam Pamphlet</title>
+<style>
+  body {
+    font-family: sans-serif;
+    margin: 0; /* Remove default body margin */
+    display: flex; /* Enable flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+    background-color: #fffad6; /* A light background color for better visibility */
+  }
+  .pdf-link-container {
+    text-align: center; /* Center the button text within its container (optional, but good for alignment) */
+  }
+  .pdf-link-button {
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: #FFB347; /* Light orange */
+    color: #FFFFFF; /* White text for contrast */
+    text-decoration: none; /* Removes the default underline from the link */
+    border: 1px solid #FDD835; /* Yellow border for a traditional feel */
+    border-radius: 10px; /* Slightly rounded corners */
+    font-size: 30px;
+    cursor: pointer; /* Changes the cursor to indicate it's clickable */
+  }
+
+  .pdf-link-button:hover {
+    background-color: #F57C00; /* Darker orange on hover for feedback */
+  }
+
+  .pdf-link-container p {
+    font-size: 25px;
+    color: rgb(102, 0, 0);
+  }
+</style>
 </head>
 <body>
 
-<p><a href="upanayanam_pamphlet.pdf" target="_blank">Click here to view the Upanayanam Pamphlet</a></p>
+
+<div class="pdf-link-container">
+  <p>Sumedh Kota's Upanayanam Function </p>
+  <a href="upanayanam_pamphlet.pdf" class="pdf-link-button">View Upanayanam Pamphlet</a>
+</div>
 
 </body>
 </html>
