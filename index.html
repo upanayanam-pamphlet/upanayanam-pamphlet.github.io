@@ -5,43 +5,56 @@
 <style>
   body {
     font-family: sans-serif;
-    margin: 0; /* Remove default body margin */
-    display: flex; /* Enable flexbox for centering */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
-    background-color: #fffad6; /* A light background color for better visibility */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fffad6;
+    text-align: center; /* Center text within the body for smaller screens */
   }
   .pdf-link-container {
-    text-align: center; /* Center the button text within its container (optional, but good for alignment) */
+    /* No need for explicit text-align here as body is centered */
+    padding: 20px; /* Add some padding around the container */
+  }
+  .pdf-link-container p {
+    font-size: 20px; /* Slightly smaller font for the heading on mobile */
+    color: rgb(102, 0, 0);
+    margin-bottom: 20px; /* Add some space below the heading */
   }
   .pdf-link-button {
     display: inline-block;
-    padding: 20px 40px;
-    background-color: #FFB347; /* Light orange */
-    color: #FFFFFF; /* White text for contrast */
-    text-decoration: none; /* Removes the default underline from the link */
-    border: 1px solid #FDD835; /* Yellow border for a traditional feel */
-    border-radius: 10px; /* Slightly rounded corners */
-    font-size: 30px;
-    cursor: pointer; /* Changes the cursor to indicate it's clickable */
+    padding: 15px 30px; /* Adjust padding for a comfortable touch area */
+    background-color: #FFB347;
+    color: #FFFFFF;
+    text-decoration: none;
+    border: 1px solid #FDD835;
+    border-radius: 10px;
+    font-size: 20px; /* Adjust font size for readability on mobile */
+    cursor: pointer;
+    white-space: nowrap; /* Prevent text from wrapping to multiple lines on smaller buttons */
   }
 
   .pdf-link-button:hover {
-    background-color: #F57C00; /* Darker orange on hover for feedback */
+    background-color: #F57C00;
   }
 
-  .pdf-link-container p {
-    font-size: 25px;
-    color: rgb(102, 0, 0);
+  /* Media query for smaller screens (e.g., phones) */
+  @media (max-width: 600px) {
+    .pdf-link-button {
+      font-size: 18px; /* Even smaller font on very small screens */
+      padding: 12px 25px;
+    }
+    .pdf-link-container p {
+      font-size: 18px; /* Adjust heading size on smaller screens */
+    }
   }
 </style>
 </head>
 <body>
 
-
 <div class="pdf-link-container">
-  <p>Sumedh Kota's Upanayanam Function </p>
+  <p>Sumedh Kota's Upanayanam Function</p>
   <a href="upanayanam_pamphlet.pdf" class="pdf-link-button">View Upanayanam Pamphlet</a>
 </div>
 
